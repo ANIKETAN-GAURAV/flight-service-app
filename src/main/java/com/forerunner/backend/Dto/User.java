@@ -19,7 +19,7 @@ public class User {
     @Column( nullable = false, length = 64)
     private String password;
 
-    @Column(name= "user_name", nullable = false, length = 20)
+    @Column(name= "userName", nullable = false, length = 20)
     private String userName;
 
     @Column(name= "healthInfo")
@@ -28,9 +28,15 @@ public class User {
     @Column(name= "foodItems")
     private String foodItems;
 
+    @Column(name = "query")
+    private String query;
+
     @Column(name= "anyOrder")
     private Boolean anyOrder;
 
     @Column(name= "createdTime")
     private Date createdTime;
+
+    @Column(name = "seatNo")
+    private String seatNo;
 }
