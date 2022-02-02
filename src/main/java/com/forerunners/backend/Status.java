@@ -1,4 +1,4 @@
-package com.forerunner.backend;
+package com.forerunners.backend;
 
 public enum Status {
         SUCCESS,

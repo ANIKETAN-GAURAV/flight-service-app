@@ -1,4 +1,4 @@
-package com.forerunner.backend.Dto;
+package com.forerunners.backend.Dto;
 
 import lombok.Data;
 
@@ -7,8 +7,8 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "users",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
-public class User {
+@Table(name = "users")
+public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,24 +19,24 @@ public class User {
     @Column( nullable = false, length = 64)
     private String password;
 
-    @Column(name= "userName", nullable = false, length = 20)
+    @Column(name= "user_name", nullable = false, length = 20)
     private String userName;
 
-    @Column(name= "healthInfo")
+    @Column(name= "health_info")
     private String healthInfo;
 
-    @Column(name= "foodItems")
+    @Column(name= "food_items")
     private String foodItems;
 
     @Column(name = "query")
     private String query;
 
-    @Column(name= "anyOrder")
-    private Boolean anyOrder;
+    @Column(name= "any_order")
+    private Integer anyOrder;
 
-    @Column(name= "createdTime")
+    @Column(name= "created_time")
     private Date createdTime;
 
-    @Column(name = "seatNo")
+    @Column(name = "seat_no")
     private String seatNo;
 }
